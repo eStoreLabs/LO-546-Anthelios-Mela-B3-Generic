@@ -4,7 +4,7 @@ $color_3: #000;
 $color_4: #013e93;
 $color_5: #f07d00;
 $font-family_1: "Montserrat", sans-serif;
-$background-color_5: #F2F2F2;
+$background-color_5: #f2f2f2;
 $background-color_6: #f4f4f4;
 
 body {
@@ -861,11 +861,11 @@ body {
 
       .es-benefits {
         .es-benefits__title {
-          font-size: 40px;
+          font-size: 32px;
         }
 
         .es-benefits__text {
-          font-size: 30px;
+          font-size: 26px;
         }
 
         .es-benefits__list {
@@ -873,13 +873,18 @@ body {
           justify-content: space-around;
 
           .es-benefits__single {
-            max-width: 27%;
+            max-width: 33%;
+            flex: 1 1 0;
+          }
+          .es-benefits__single--text {
+            font-size: 14px;
+            text-wrap: balance;
           }
         }
       }
 
       .es-ingredience {
-          grid-template-columns: 65% 35%;
+        grid-template-columns: 65% 35%;
 
         .es-ingredience__container-title {
           margin-top: 150px;
