@@ -567,6 +567,15 @@ body {
   background-color: #013e93;
 }
 
+/* === Hide the hand === */
+@media (min-width: 420px) and (max-width: 767px) {
+  #es-rc #es-rc-content .es-ingredients__hand {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-ingredients__list {
+    margin-bottom: 50px;
+  }
+}
 /* === Responsive Header === */
 @media (min-width: 600px) {
   #es-rc #es-rc-content .es-kv__container {
