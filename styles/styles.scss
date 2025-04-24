@@ -732,6 +732,67 @@ body {
   }
 }
 
+@media (min-width: 440px) {
+  #es-rc #es-rc-content {
+    .es-ingredients {
+      display: block;
+      position: relative;
+
+      &__container {
+        width: 82%;
+        padding-inline: 24px;
+        padding-bottom: 50px;
+
+        &-title {
+          width: 90%;
+          max-width: 565px;
+          margin: auto;
+          margin-top: 120px;
+          margin-bottom: 90px;
+          font-size: 30px;
+        }
+      }
+
+      &__list {
+        gap: 24px;
+        width: 95%;
+      }
+
+      &__single {
+        padding: unset;
+        flex: 1 0 0;
+
+        &--text {
+          margin-left: 12px;
+        }
+
+        &--img img {
+          max-width: 60px;
+        }
+        &--text--title {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        &--text--desc {
+          font-size: 12px;
+        }
+      }
+      &__hand {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 62%;
+        right: 0;
+        height: 100%;
+        max-height: 300px;
+        z-index: -1;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
 /* === Small Screens === */
 
 @media (min-width: 576px) {
@@ -748,6 +809,26 @@ body {
       }
       &--left--text {
         font-size: 21px;
+      }
+    }
+    .es-ingredients {
+      &__container {
+        padding-inline: 32px;
+        padding-bottom: 60px;
+      }
+      &__list {
+        width: 85%;
+      }
+      &__single {
+        &--text {
+          margin-left: 20px;
+        }
+        &--img img {
+          max-width: 90px;
+        }
+      }
+      &__hand {
+        max-height: 420px;
       }
     }
   }
@@ -805,55 +886,13 @@ body {
       }
 
       .es-ingredients {
-        display: block;
-        position: relative;
-
-        &__container {
-          width: 82%;
-          padding-inline: 32px;
-          padding-bottom: 60px;
-
-          &-title {
-            width: 90%;
-            max-width: 565px;
-            margin: auto;
-            margin-top: 120px;
-            margin-bottom: 90px;
-            font-size: 30px;
-          }
-        }
-
         &__list {
           flex-direction: row;
-          gap: 24px;
-        }
-
-        &__single {
-          padding: unset;
-          flex: 1 0 0;
-
-          &--img img {
-            max-width: 90px;
-          }
-          &--text--title {
-            font-size: 18px;
-            margin-bottom: 10px;
-          }
-          &--text--desc {
-            font-size: 12px;
-          }
+          width: 100%;
         }
         &__hand {
-          position: absolute;
-          transform: translateY(-50%);
           top: 50%;
-          right: 0;
-          height: 100%;
           max-height: 375px;
-          z-index: -1;
-          img {
-            height: 100%;
-          }
         }
       }
 
