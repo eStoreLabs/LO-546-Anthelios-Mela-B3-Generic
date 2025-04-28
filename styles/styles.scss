@@ -707,6 +707,21 @@ body {
   }
 }
 
+/* === Hide the hand === */
+
+@media (min-width: 420px) and (max-width: 767px) {
+  #es-rc #es-rc-content {
+    .es-ingredients {
+      &__hand {
+        display: none;
+      }
+      &__list {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
 /* === Responsive Header === */
 @media (min-width: 600px) {
   #es-rc {
